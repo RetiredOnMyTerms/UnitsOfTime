@@ -22,6 +22,7 @@ export function Sidebar({ app, catCounts, mePct, meLine, quote }: {
       <IslandOfMe mePct={mePct} meLine={meLine} />
       <CalendarSyncPanel app={app} />
       {SHOW_QUOTES && <QuoteCard quote={quote} />}
+      <button className="ghost" style={{ alignSelf: 'flex-start' }} onClick={() => app.setAboutOpen(true)}>About</button>
     </aside>
   );
 }

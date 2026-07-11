@@ -54,6 +54,7 @@ export function useUnitsApp() {
   const [qaOpen, setQaOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [recapOpen, setRecapOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [newCatOpen, setNewCatOpen] = useState(false);
   const [ncName, setNcName] = useState('');
   const [ncColor, setNcColor] = useState(SWATCHES[3]);
@@ -91,6 +92,7 @@ export function useUnitsApp() {
         setSel(null);
         setRecapOpen(false);
         setQaOpen(false);
+        setAboutOpen(false);
       }
     };
     window.addEventListener('keydown', onKeyDown);
@@ -291,6 +293,7 @@ export function useUnitsApp() {
     qaOpen,
     toast,
     recapOpen,
+    aboutOpen,
     newCatOpen,
     ncName,
     ncColor,
@@ -305,6 +308,7 @@ export function useUnitsApp() {
     setQaText,
     setQaOpen,
     setRecapOpen,
+    setAboutOpen,
     setNewCatOpen,
     setNcName,
     setNcColor,
