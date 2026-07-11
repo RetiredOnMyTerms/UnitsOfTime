@@ -18,7 +18,7 @@ Track your activities as units of time, inspired by Will Freeman from *About A B
 - Calendar sync panel (Google/Outlook/Apple/Amazon) — currently **simulated**: toggling a provider on fills in fixed demo events so the UI/UX can be evaluated before real OAuth integration is built. See `src/units/calendar/` for the swappable `CalendarProvider` interface.
 - Responsive layout (sidebar moves below the grid on narrow viewports)
 
-State persists to `localStorage` — there's no backend yet.
+State persists to `localStorage` — there's no backend yet. See [Data & privacy](#data--privacy) below for what that means in practice.
 
 ## Getting started
 
@@ -46,6 +46,14 @@ npm run lint       # oxlint
 - `src/units/logic.ts` — pure view-model helpers (grid cells, slot rendering, recap/island-of-me calculations)
 - `src/units/calendar/` — calendar sync abstraction; `simulatedProvider.ts` is the only implementation today
 - `src/units/components/` — presentational components
+
+## Data & privacy
+
+All app data (your categories, assigned units, and calendar sync toggles) lives in your browser's `localStorage`, under the key `units-tracker-v1` — there's no backend or account system.
+
+- **Per-browser, not shared.** Data lives only in the browser you used. There's no server, so nobody (including the repo owner) can see or collect it, and it never syncs between your devices or browsers.
+- **Origin-scoped, not path-scoped.** `localStorage` is scoped to the full origin (e.g. `https://retiredonmyterms.github.io`), not the specific path. If this account ever hosts another GitHub Pages project under the same origin that happens to reuse the exact key `units-tracker-v1`, the two would collide — unlikely, but worth knowing.
+- **Easy to lose.** Clearing your browser's site data, using a private/incognito window, or switching browsers or devices all mean a fresh, empty day. Nothing is backed up anywhere.
 
 ## Roadmap
 
