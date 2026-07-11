@@ -9,7 +9,7 @@ export function AboutModal({ app }: { app: UnitsApp }) {
     <div className="ovl" onClick={close}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <div className="fx jb ac">
-          <h3 className="m0 mtitle">About Units.</h3>
+          <h3 className="m0 postertitle">About An App</h3>
           <button className="cdel" style={{ opacity: 1 }} onClick={close}>×</button>
         </div>
         <p className="msub">
