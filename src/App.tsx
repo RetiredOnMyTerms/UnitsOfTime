@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import './units/units.css';
 import { DENSITY, QUOTES } from './units/constants';
+import { AboutModal } from './units/components/AboutModal';
 import { AssignBar } from './units/components/AssignBar';
 import { DayGrid } from './units/components/DayGrid';
 import { Header } from './units/components/Header';
@@ -40,6 +41,7 @@ function App() {
       <AssignBar app={app} cells={cells} />
       <Toast message={app.toast} />
       <RecapModal app={app} />
+      <AboutModal app={app} />
     </div>
   );
 }
