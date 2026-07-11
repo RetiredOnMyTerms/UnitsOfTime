@@ -2,6 +2,8 @@
 
 Track your activities as units of time, inspired by Will Freeman from *About A Boy*: a day is 48 half-hour units, dragged and dropped into place.
 
+**[Live demo →](https://retiredonmyterms.github.io/UnitsOfTime/)**
+
 > "I find the key is to think of a day as units of time, each unit consisting of no more than thirty minutes. Full hours can be a little bit intimidating and most activities take about half an hour."
 
 ![Screenshot of the Units. day grid, categories, Island of me, and calendar sync panel](docs/screenshot.png)
