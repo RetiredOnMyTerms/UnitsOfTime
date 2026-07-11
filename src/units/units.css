@@ -99,4 +99,5 @@ a:hover{color:#7d4a20}
 .rbar{height:8px;background:#f2efe9;border-radius:4px;margin-top:5px;overflow:hidden}
 .rfill{height:100%;border-radius:4px}
 .mfoot{font-family:'Newsreader',serif;font-style:italic;font-size:14.5px;color:#5b554b;margin:16px 0 0;line-height:1.5}
+.postertitle{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:.03em;font-weight:400;line-height:1}
 @media(max-width:960px){.app{flex-direction:column;height:auto;overflow:visible}.side{width:auto;order:2;border-right:none;border-top:1px solid #e7e3dc}.main{padding:16px 14px 0}.gridwrap{max-height:62vh;flex:none}.qain{width:150px}.dayname{font-size:17px}}
